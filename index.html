@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB SITES DEVELOPPEMENT| High-End Portfolio</title>
+    
+    <link rel="preconnect" href="font/Retro Pixel.otf">
+    <link rel="preconnect" href="font/Retro Pixel.otf" crossorigin>
+    <link href="font/Retro Pixel.otf" rel="stylesheet">
+    
+    <script src="font/Retro Pixel.otf"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">
+                DEV<span class="accent-dot">.</span>ELOP
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#portfolio" class="nav-item">Work</a>
+            </div>
+            <button onclick="scrollToSection('contact')" class="btn btn-primary nav-btn">Start Project</button>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="section active-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge">Premium Digital Solutions</span>
+                    <h1 class="hero-title">I design & build <br><em>high-value</em> digital experiences.</h1>
+                    <p class="hero-subtitle">Helping businesses across all industries convert visitors into loyal clients through clean code and strategic design.</p>
+                    <button onclick="scrollToSection('contact')" class="btn btn-primary">Let's Create Your Website</button>
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-header">
+                        <h2>My Approach</h2>
+                        <div class="slider-controls">
+                            <button id="prevSlide" class="control-btn"><i class="ph ph-caret-left"></i></button>
+                            <button id="nextSlide" class="control-btn"><i class="ph ph-caret-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-window">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slide">
+                                <div class="slide-image placeholder-img"></div>
+                                <div class="slide-content">
+                                    <h3>Strategic Design</h3>
+                                    <p>I don't just make things look good. I design interfaces that guide your users toward the action you want them to take.</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-image placeholder-img"></div>
+                                <div class="slide-content">
+                                    <h3>Clean Development</h3>
+                                    <p>Built with modern technologies ensuring fast load times, security, and scalability for your growing business.</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-image placeholder-img"></div>
+                                <div class="slide-content">
+                                    <h3>Client-Centric</h3>
+                                    <p>I value clear communication and transparency. You are a partner in the process, not just a customer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Selected Work</h2>
+                    <p>A curation of projects designed for impact.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="project-card">
+                        <div class="project-image placeholder-img"></div>
+                        <div class="project-info">
+                            <h3>Apex Real Estate</h3>
+                            <p>Property listing platform with advanced filtering.</p>
+                            <button class="btn-link">View Case Study <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image placeholder-img"></div>
+                        <div class="project-info">
+                            <h3>Lumina Cosmetics</h3>
+                            <p>E-commerce store with high-end brand identity.</p>
+                            <button class="btn-link">View Case Study <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image placeholder-img"></div>
+                        <div class="project-info">
+                            <h3>Nexus Tech</h3>
+                            <p>SaaS landing page optimized for conversions.</p>
+                            <button class="btn-link">View Case Study <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container form-container-wrapper">
+                <div class="form-card">
+                    <div class="form-header">
+                        <div class="step-indicator">
+                            <span>Project Inquiry</span>
+                            <span class="step-count">Step <span id="currentStepDisplay">1</span> of 11</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" id="progressBar"></div>
+                        </div>
+                    </div>
+
+                    <form id="multiStepForm">
+                        
+                        <div class="form-step active" data-step="1">
+                            <h3>Tell us about your business</h3>
+                            <div class="input-group">
+                                <input type="text" placeholder="Business Name" class="input-field" required>
+                                <input type="text" placeholder="Owner / Contact Name" class="input-field">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" placeholder="Email Address" class="input-field" required>
+                                <input type="tel" placeholder="Phone / WhatsApp" class="input-field">
+                            </div>
+                            <input type="text" placeholder="City & Country" class="input-field full-width">
+                            
+                            <label class="label-title">Do you have a website?</label>
+                            <div class="radio-group">
+                                <label class="radio-card"><input type="radio" name="has_website" value="yes"> Yes</label>
+                                <label class="radio-card"><input type="radio" name="has_website" value="no"> No</label>
+                            </div>
+                            <input type="url" placeholder="If yes, paste URL here" class="input-field full-width mt-2">
+                            
+                            <label class="label-title">Social Media</label>
+                            <div class="checkbox-grid">
+                                <label><input type="checkbox"> Instagram</label>
+                                <label><input type="checkbox"> Facebook</label>
+                                <label><input type="checkbox"> LinkedIn</label>
+                                <label><input type="checkbox"> TikTok</label>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="2">
+                            <h3>What do you offer?</h3>
+                            <p class="helper-text">List your main services or products.</p>
+                            <div class="dynamic-list">
+                                <label class="checkbox-card">
+                                    <input type="checkbox"> 
+                                    <span>Service / Product 1</span>
+                                    <input type="text" placeholder="Price Range (Optional)" class="inline-input">
+                                </label>
+                                <label class="checkbox-card">
+                                    <input type="checkbox"> 
+                                    <span>Service / Product 2</span>
+                                    <input type="text" placeholder="Price Range (Optional)" class="inline-input">
+                                </label>
+                                <input type="text" placeholder="Other (Type here...)" class="input-field full-width">
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="3">
+                            <h3>Project Type</h3>
+                            <div class="checkbox-grid">
+                                <label class="box-select"><input type="checkbox"> Website</label>
+                                <label class="box-select"><input type="checkbox"> Landing Page</label>
+                                <label class="box-select"><input type="checkbox"> E-commerce</label>
+                                <label class="box-select"><input type="checkbox"> Booking System</label>
+                                <label class="box-select"><input type="checkbox"> Web App</label>
+                                <label class="box-select"><input type="checkbox"> Branding / Logo</label>
+                                <label class="box-select"><input type="checkbox"> Ads / Content</label>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="4">
+                            <h3>Primary Goal</h3>
+                            <div class="radio-list">
+                                <label class="radio-row"><input type="radio" name="goal"> Generate Leads</label>
+                                <label class="radio-row"><input type="radio" name="goal"> Increase Sales</label>
+                                <label class="radio-row"><input type="radio" name="goal"> Professional Presentation</label>
+                                <label class="radio-row"><input type="radio" name="goal"> Build Trust</label>
+                                <label class="radio-row"><input type="radio" name="goal"> Rebranding</label>
+                            </div>
+                            <textarea placeholder="How will you know the project is successful?" class="input-field full-width mt-4"></textarea>
+                        </div>
+
+                        <div class="form-step" data-step="5">
+                            <h3>Target Audience</h3>
+                            <textarea placeholder="Describe your ideal client (Age, gender, interests...)" class="input-field full-width"></textarea>
+                            <div class="input-group mt-4">
+                                <select class="input-field">
+                                    <option>Local</option>
+                                    <option>National</option>
+                                    <option>International</option>
+                                </select>
+                                <select class="input-field">
+                                    <option>B2B (Business to Business)</option>
+                                    <option>B2C (Business to Consumer)</option>
+                                    <option>Both</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="6">
+                            <h3>Visual Style & Branding</h3>
+                            <div class="checkbox-grid mb-4">
+                                <label><input type="checkbox"> I have a Logo</label>
+                                <label><input type="checkbox"> I have Brand Colors</label>
+                                <label><input type="checkbox"> I have Fonts</label>
+                                <label><input type="checkbox"> No branding yet</label>
+                            </div>
+                            <label class="label-title">Style Preference</label>
+                            <div class="checkbox-grid">
+                                <label class="box-select"><input type="checkbox"> Luxury</label>
+                                <label class="box-select"><input type="checkbox"> Minimal</label>
+                                <label class="box-select"><input type="checkbox"> Corporate</label>
+                                <label class="box-select"><input type="checkbox"> Creative</label>
+                                <label class="box-select"><input type="checkbox"> Bold</label>
+                            </div>
+                            <input type="text" placeholder="Paste inspiration links here..." class="input-field full-width mt-4">
+                        </div>
+
+                        <div class="form-step" data-step="7">
+                            <h3>Content Availability</h3>
+                            <p class="helper-text">What assets do you have ready?</p>
+                            <div class="checkbox-grid">
+                                <label><input type="checkbox"> Professional Photos</label>
+                                <label><input type="checkbox"> Videos</label>
+                                <label><input type="checkbox"> Text / Copy</label>
+                                <label><input type="checkbox"> Pricing List</label>
+                                <label><input type="checkbox"> Testimonials</label>
+                            </div>
+                            <div class="mt-4">
+                                <label class="label-title">Will you need help creating content?</label>
+                                <div class="radio-group">
+                                    <label class="radio-card"><input type="radio" name="help_content" value="yes"> Yes</label>
+                                    <label class="radio-card"><input type="radio" name="help_content" value="no"> No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="8">
+                            <h3>Features & Integrations</h3>
+                            <div class="checkbox-grid">
+                                <label class="box-select"><input type="checkbox"> Contact Forms</label>
+                                <label class="box-select"><input type="checkbox"> Online Payments</label>
+                                <label class="box-select"><input type="checkbox"> Booking / Scheduling</label>
+                                <label class="box-select"><input type="checkbox"> Email Marketing</label>
+                                <label class="box-select"><input type="checkbox"> Analytics</label>
+                                <label class="box-select"><input type="checkbox"> CRM</label>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="9">
+                            <h3>Timeline</h3>
+                            <div class="input-group">
+                                <div>
+                                    <label class="label-small">Start Date</label>
+                                    <input type="date" class="input-field">
+                                </div>
+                                <div>
+                                    <label class="label-small">Desired Launch</label>
+                                    <input type="date" class="input-field">
+                                </div>
+                            </div>
+                            <div class="radio-group mt-4">
+                                <label class="radio-card"><input type="radio" name="timeline" value="flexible"> Flexible</label>
+                                <label class="radio-card"><input type="radio" name="timeline" value="fixed"> Fixed Deadline</label>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="10">
+                            <h3>Budget Range</h3>
+                            <div class="radio-list">
+                                <label class="radio-row"><input type="radio" name="budget"> Starter Package</label>
+                                <label class="radio-row"><input type="radio" name="budget"> Standard</label>
+                                <label class="radio-row"><input type="radio" name="budget"> Premium / Custom</label>
+                                <label class="radio-row"><input type="radio" name="budget"> Not sure (Advise me)</label>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="11">
+                            <h3>Future Needs</h3>
+                            <div class="checkbox-grid mb-6">
+                                <label><input type="checkbox"> Monthly Updates</label>
+                                <label><input type="checkbox"> Hosting & Maintenance</label>
+                                <label><input type="checkbox"> SEO</label>
+                                <label><input type="checkbox"> Ads Management</label>
+                            </div>
+                            
+                            <div class="submit-area">
+                                <p>Ready to build something great?</p>
+                                <button type="button" id="submitBtn" class="btn btn-primary full-width">Submit Application</button>
+                            </div>
+                        </div>
+
+                        <div class="form-nav">
+                            <button type="button" id="prevBtn" class="btn btn-secondary hidden">Back</button>
+                            <button type="button" id="nextBtn" class="btn btn-dark">Next <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="logo">DEV<span class="accent-dot">.</span>ELOP</div>
+                <p class="footer-tagline">Architecting premium digital experiences for the future.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Selected Work</a></li>
+                    <li><a href="#contact">Start Project</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-btn"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" class="social-btn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" class="social-btn"><i class="ph ph-whatsapp-logo"></i></a>
+                </div>
+                <p class="contact-email">Allalantakii@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; <span id="year">2026</span> All rights reserved.
+            </div>
+            <div class="designer-tag">
+                Designed by <span class="highlight">Allal Antaki</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
