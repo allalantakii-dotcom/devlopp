@@ -131,28 +131,32 @@
                         <div class="form-step active" data-step="1">
                             <h3>Tell us about your business</h3>
                             <div class="input-group">
-                                <input type="text" placeholder="Business Name" class="input-field" required>
-                                <input type="text" placeholder="Owner / Contact Name" class="input-field">
+                             <input type="text" id="businessName" name="businessName" placeholder="Business Name" class="input-field" required>
+
+                                <input type="text" id="ownerName" name="ownerName" placeholder="Owner / Contact Name" class="input-field">
                             </div>
-                            <div class="input-group">
-                                <input type="email" placeholder="Email Address" class="input-field" required>
-                                <input type="tel" placeholder="Phone / WhatsApp" class="input-field">
-                            </div>
-                            <input type="text" placeholder="City & Country" class="input-field full-width">
+                             <input type="text" id="contactName" name="contactName" placeholder="Owner / Contact Name" class="input-field">
+
+                            <input type="email" id="email" name="email" placeholder="Email Address" class="input-field" required>
+
+                            <input type="tel" id="phone" name="phone" placeholder="Phone / WhatsApp" class="input-field">
+
+                            <input type="text" id="location" name="location" placeholder="City & Country" class="input-field full-width">
+
                             
                             <label class="label-title">Do you have a website?</label>
                             <div class="radio-group">
                                 <label class="radio-card"><input type="radio" name="has_website" value="yes"> Yes</label>
                                 <label class="radio-card"><input type="radio" name="has_website" value="no"> No</label>
                             </div>
-                            <input type="url" placeholder="If yes, paste URL here" class="input-field full-width mt-2">
+                            <input type="url" id="websiteUrl" name="websiteUrl" placeholder="If yes, paste URL here" class="input-field full-width mt-2">
                             
                             <label class="label-title">Social Media</label>
                             <div class="checkbox-grid">
-                                <label><input type="checkbox"> Instagram</label>
-                                <label><input type="checkbox"> Facebook</label>
-                                <label><input type="checkbox"> LinkedIn</label>
-                                <label><input type="checkbox"> TikTok</label>
+                                <label><input type="checkbox" name="social_instagram" value="Instagram"> Instagram</label>
+                                <label><input type="checkbox" name="social_facebook" value="Facebook"> Facebook</label>
+                                <label><input type="checkbox" name="social_linkedin" value="LinkedIn"> LinkedIn</label>
+                                <label><input type="checkbox" name="social_tiktok" value="TikTok"> TikTok</label>
                             </div>
                         </div>
 
@@ -161,57 +165,57 @@
                             <p class="helper-text">List your main services or products.</p>
                             <div class="dynamic-list">
                                 <label class="checkbox-card">
-                                    <input type="checkbox"> 
+                                    <input type="checkbox" name="service1_check" value="Service/Product 1"> 
                                     <span>Service / Product 1</span>
-                                    <input type="text" placeholder="Price Range (Optional)" class="inline-input">
+                                    <input type="text" name="service1_price" placeholder="Price Range (Optional)" class="inline-input">
                                 </label>
                                 <label class="checkbox-card">
-                                    <input type="checkbox"> 
+                                    <input type="checkbox" name="service2_check" value="Service/Product 2"> 
                                     <span>Service / Product 2</span>
-                                    <input type="text" placeholder="Price Range (Optional)" class="inline-input">
+                                    <input type="text" name="service2_price" placeholder="Price Range (Optional)" class="inline-input">
                                 </label>
-                                <input type="text" placeholder="Other (Type here...)" class="input-field full-width">
+                                <input type="text" name="other_services" placeholder="Other (Type here...)" class="input-field full-width">
                             </div>
                         </div>
 
                         <div class="form-step" data-step="3">
                             <h3>Project Type</h3>
                             <div class="checkbox-grid">
-                                <label class="box-select"><input type="checkbox"> Website</label>
-                                <label class="box-select"><input type="checkbox"> Landing Page</label>
-                                <label class="box-select"><input type="checkbox"> E-commerce</label>
-                                <label class="box-select"><input type="checkbox"> Booking System</label>
-                                <label class="box-select"><input type="checkbox"> Web App</label>
-                                <label class="box-select"><input type="checkbox"> Branding / Logo</label>
-                                <label class="box-select"><input type="checkbox"> Ads / Content</label>
+                                <label class="box-select"><input type="checkbox" name="project_website" value="Website"> Website</label>
+                                <label class="box-select"><input type="checkbox" name="project_landing" value="Landing Page"> Landing Page</label>
+                                <label class="box-select"><input type="checkbox" name="project_ecommerce" value="E-commerce"> E-commerce</label>
+                                <label class="box-select"><input type="checkbox" name="project_booking" value="Booking System"> Booking System</label>
+                                <label class="box-select"><input type="checkbox" name="project_webapp" value="Web App"> Web App</label>
+                                <label class="box-select"><input type="checkbox" name="project_branding" value="Branding/Logo"> Branding / Logo</label>
+                                <label class="box-select"><input type="checkbox" name="project_ads" value="Ads/Content"> Ads / Content</label>
                             </div>
                         </div>
 
                         <div class="form-step" data-step="4">
                             <h3>Primary Goal</h3>
                             <div class="radio-list">
-                                <label class="radio-row"><input type="radio" name="goal"> Generate Leads</label>
-                                <label class="radio-row"><input type="radio" name="goal"> Increase Sales</label>
-                                <label class="radio-row"><input type="radio" name="goal"> Professional Presentation</label>
-                                <label class="radio-row"><input type="radio" name="goal"> Build Trust</label>
-                                <label class="radio-row"><input type="radio" name="goal"> Rebranding</label>
+                                <label class="radio-row"><input type="radio" name="goal" value="Generate Leads"> Generate Leads</label>
+                                <label class="radio-row"><input type="radio" name="goal" value="Increase Sales"> Increase Sales</label>
+                                <label class="radio-row"><input type="radio" name="goal" value="Professional Presentation"> Professional Presentation</label>
+                                <label class="radio-row"><input type="radio" name="goal" value="Build Trust"> Build Trust</label>
+                                <label class="radio-row"><input type="radio" name="goal" value="Rebranding"> Rebranding</label>
                             </div>
-                            <textarea placeholder="How will you know the project is successful?" class="input-field full-width mt-4"></textarea>
+                            <textarea name="success_metrics" placeholder="How will you know the project is successful?" class="input-field full-width mt-4"></textarea>
                         </div>
 
                         <div class="form-step" data-step="5">
                             <h3>Target Audience</h3>
-                            <textarea placeholder="Describe your ideal client (Age, gender, interests...)" class="input-field full-width"></textarea>
+                            <textarea name="target_audience" placeholder="Describe your ideal client (Age, gender, interests...)" class="input-field full-width"></textarea>
                             <div class="input-group mt-4">
-                                <select class="input-field">
-                                    <option>Local</option>
-                                    <option>National</option>
-                                    <option>International</option>
+                                <select name="market_scope" class="input-field">
+                                    <option value="Local">Local</option>
+                                    <option value="National">National</option>
+                                    <option value="International">International</option>
                                 </select>
-                                <select class="input-field">
-                                    <option>B2B (Business to Business)</option>
-                                    <option>B2C (Business to Consumer)</option>
-                                    <option>Both</option>
+                                <select name="business_type" class="input-field">
+                                    <option value="B2B">B2B (Business to Business)</option>
+                                    <option value="B2C">B2C (Business to Consumer)</option>
+                                    <option value="Both">Both</option>
                                 </select>
                             </div>
                         </div>
@@ -219,31 +223,31 @@
                         <div class="form-step" data-step="6">
                             <h3>Visual Style & Branding</h3>
                             <div class="checkbox-grid mb-4">
-                                <label><input type="checkbox"> I have a Logo</label>
-                                <label><input type="checkbox"> I have Brand Colors</label>
-                                <label><input type="checkbox"> I have Fonts</label>
-                                <label><input type="checkbox"> No branding yet</label>
+                                <label><input type="checkbox" name="has_logo" value="I have a Logo"> I have a Logo</label>
+                                <label><input type="checkbox" name="has_colors" value="I have Brand Colors"> I have Brand Colors</label>
+                                <label><input type="checkbox" name="has_fonts" value="I have Fonts"> I have Fonts</label>
+                                <label><input type="checkbox" name="no_branding" value="No branding yet"> No branding yet</label>
                             </div>
                             <label class="label-title">Style Preference</label>
                             <div class="checkbox-grid">
-                                <label class="box-select"><input type="checkbox"> Luxury</label>
-                                <label class="box-select"><input type="checkbox"> Minimal</label>
-                                <label class="box-select"><input type="checkbox"> Corporate</label>
-                                <label class="box-select"><input type="checkbox"> Creative</label>
-                                <label class="box-select"><input type="checkbox"> Bold</label>
+                                <label class="box-select"><input type="checkbox" name="style_luxury" value="Luxury"> Luxury</label>
+                                <label class="box-select"><input type="checkbox" name="style_minimal" value="Minimal"> Minimal</label>
+                                <label class="box-select"><input type="checkbox" name="style_corporate" value="Corporate"> Corporate</label>
+                                <label class="box-select"><input type="checkbox" name="style_creative" value="Creative"> Creative</label>
+                                <label class="box-select"><input type="checkbox" name="style_bold" value="Bold"> Bold</label>
                             </div>
-                            <input type="text" placeholder="Paste inspiration links here..." class="input-field full-width mt-4">
+                            <input type="text" name="inspiration_links" placeholder="Paste inspiration links here..." class="input-field full-width mt-4">
                         </div>
 
                         <div class="form-step" data-step="7">
                             <h3>Content Availability</h3>
                             <p class="helper-text">What assets do you have ready?</p>
                             <div class="checkbox-grid">
-                                <label><input type="checkbox"> Professional Photos</label>
-                                <label><input type="checkbox"> Videos</label>
-                                <label><input type="checkbox"> Text / Copy</label>
-                                <label><input type="checkbox"> Pricing List</label>
-                                <label><input type="checkbox"> Testimonials</label>
+                                <label><input type="checkbox" name="has_photos" value="Professional Photos"> Professional Photos</label>
+                                <label><input type="checkbox" name="has_videos" value="Videos"> Videos</label>
+                                <label><input type="checkbox" name="has_text" value="Text/Copy"> Text / Copy</label>
+                                <label><input type="checkbox" name="has_pricing" value="Pricing List"> Pricing List</label>
+                                <label><input type="checkbox" name="has_testimonials" value="Testimonials"> Testimonials</label>
                             </div>
                             <div class="mt-4">
                                 <label class="label-title">Will you need help creating content?</label>
@@ -257,12 +261,12 @@
                         <div class="form-step" data-step="8">
                             <h3>Features & Integrations</h3>
                             <div class="checkbox-grid">
-                                <label class="box-select"><input type="checkbox"> Contact Forms</label>
-                                <label class="box-select"><input type="checkbox"> Online Payments</label>
-                                <label class="box-select"><input type="checkbox"> Booking / Scheduling</label>
-                                <label class="box-select"><input type="checkbox"> Email Marketing</label>
-                                <label class="box-select"><input type="checkbox"> Analytics</label>
-                                <label class="box-select"><input type="checkbox"> CRM</label>
+                                <label class="box-select"><input type="checkbox" name="feature_forms" value="Contact Forms"> Contact Forms</label>
+                                <label class="box-select"><input type="checkbox" name="feature_payments" value="Online Payments"> Online Payments</label>
+                                <label class="box-select"><input type="checkbox" name="feature_booking" value="Booking/Scheduling"> Booking / Scheduling</label>
+                                <label class="box-select"><input type="checkbox" name="feature_email" value="Email Marketing"> Email Marketing</label>
+                                <label class="box-select"><input type="checkbox" name="feature_analytics" value="Analytics"> Analytics</label>
+                                <label class="box-select"><input type="checkbox" name="feature_crm" value="CRM"> CRM</label>
                             </div>
                         </div>
 
@@ -271,11 +275,11 @@
                             <div class="input-group">
                                 <div>
                                     <label class="label-small">Start Date</label>
-                                    <input type="date" class="input-field">
+                                    <input type="date" name="start_date" class="input-field">
                                 </div>
                                 <div>
                                     <label class="label-small">Desired Launch</label>
-                                    <input type="date" class="input-field">
+                                    <input type="date" name="launch_date" class="input-field">
                                 </div>
                             </div>
                             <div class="radio-group mt-4">
@@ -287,20 +291,20 @@
                         <div class="form-step" data-step="10">
                             <h3>Budget Range</h3>
                             <div class="radio-list">
-                                <label class="radio-row"><input type="radio" name="budget"> Starter Package</label>
-                                <label class="radio-row"><input type="radio" name="budget"> Standard</label>
-                                <label class="radio-row"><input type="radio" name="budget"> Premium / Custom</label>
-                                <label class="radio-row"><input type="radio" name="budget"> Not sure (Advise me)</label>
+                                <label class="radio-row"><input type="radio" name="budget" value="Starter Package"> Starter Package</label>
+                                <label class="radio-row"><input type="radio" name="budget" value="Standard"> Standard</label>
+                                <label class="radio-row"><input type="radio" name="budget" value="Premium/Custom"> Premium / Custom</label>
+                                <label class="radio-row"><input type="radio" name="budget" value="Not sure"> Not sure (Advise me)</label>
                             </div>
                         </div>
 
                         <div class="form-step" data-step="11">
                             <h3>Future Needs</h3>
                             <div class="checkbox-grid mb-6">
-                                <label><input type="checkbox"> Monthly Updates</label>
-                                <label><input type="checkbox"> Hosting & Maintenance</label>
-                                <label><input type="checkbox"> SEO</label>
-                                <label><input type="checkbox"> Ads Management</label>
+                                <label><input type="checkbox" name="future_updates" value="Monthly Updates"> Monthly Updates</label>
+                                <label><input type="checkbox" name="future_hosting" value="Hosting & Maintenance"> Hosting & Maintenance</label>
+                                <label><input type="checkbox" name="future_seo" value="SEO"> SEO</label>
+                                <label><input type="checkbox" name="future_ads" value="Ads Management"> Ads Management</label>
                             </div>
                             
                             <div class="submit-area">
@@ -359,5 +363,204 @@
 </footer>
 
     <script src="script.js"></script>
+    <script>
+document.getElementById("submitBtn").addEventListener("click", function () {
+    
+    // ===== STEP 1: BUSINESS INFORMATION =====
+    const businessName = document.getElementById("businessName").value || "Not provided";
+    const ownerName = document.getElementById("ownerName").value || "Not provided";
+    const contactName = document.getElementById("contactName").value || "Not provided";
+    const email = document.getElementById("email").value || "Not provided";
+    const phone = document.getElementById("phone").value || "Not provided";
+    const location = document.getElementById("location").value || "Not provided";
+    
+    // Has website
+    const hasWebsite = document.querySelector('input[name="has_website"]:checked')?.value || "Not answered";
+    const websiteUrl = document.getElementById("websiteUrl").value || "Not provided";
+    
+    // Social Media (collect all checked)
+    const socialMedia = [];
+    document.querySelectorAll('[name^="social_"]:checked').forEach(el => {
+        socialMedia.push(el.value);
+    });
+    const socialMediaText = socialMedia.length > 0 ? socialMedia.join(", ") : "None selected";
+
+    // ===== STEP 2: SERVICES/PRODUCTS =====
+    let servicesText = "";
+    const service1Check = document.querySelector('[name="service1_check"]').checked;
+    const service1Price = document.querySelector('[name="service1_price"]').value;
+    if (service1Check) {
+        servicesText += "Service/Product 1" + (service1Price ? ` (${service1Price})` : "") + ", ";
+    }
+    
+    const service2Check = document.querySelector('[name="service2_check"]').checked;
+    const service2Price = document.querySelector('[name="service2_price"]').value;
+    if (service2Check) {
+        servicesText += "Service/Product 2" + (service2Price ? ` (${service2Price})` : "") + ", ";
+    }
+    
+    const otherServices = document.querySelector('[name="other_services"]').value;
+    if (otherServices) {
+        servicesText += otherServices;
+    }
+    servicesText = servicesText || "Not provided";
+
+    // ===== STEP 3: PROJECT TYPE =====
+    const projectTypes = [];
+    document.querySelectorAll('[name^="project_"]:checked').forEach(el => {
+        projectTypes.push(el.value);
+    });
+    const projectTypesText = projectTypes.length > 0 ? projectTypes.join(", ") : "Not selected";
+
+    // ===== STEP 4: PRIMARY GOAL =====
+    const goal = document.querySelector('input[name="goal"]:checked')?.value || "Not selected";
+    const successMetrics = document.querySelector('[name="success_metrics"]').value || "Not provided";
+
+    // ===== STEP 5: TARGET AUDIENCE =====
+    const targetAudience = document.querySelector('[name="target_audience"]').value || "Not provided";
+    const marketScope = document.querySelector('[name="market_scope"]').value || "Not selected";
+    const businessType = document.querySelector('[name="business_type"]').value || "Not selected";
+
+    // ===== STEP 6: VISUAL STYLE & BRANDING =====
+    const brandingAssets = [];
+    if (document.querySelector('[name="has_logo"]')?.checked) brandingAssets.push("Logo");
+    if (document.querySelector('[name="has_colors"]')?.checked) brandingAssets.push("Brand Colors");
+    if (document.querySelector('[name="has_fonts"]')?.checked) brandingAssets.push("Fonts");
+    if (document.querySelector('[name="no_branding"]')?.checked) brandingAssets.push("No branding yet");
+    const brandingText = brandingAssets.length > 0 ? brandingAssets.join(", ") : "Not answered";
+    
+    const stylePreferences = [];
+    if (document.querySelector('[name="style_luxury"]')?.checked) stylePreferences.push("Luxury");
+    if (document.querySelector('[name="style_minimal"]')?.checked) stylePreferences.push("Minimal");
+    if (document.querySelector('[name="style_corporate"]')?.checked) stylePreferences.push("Corporate");
+    if (document.querySelector('[name="style_creative"]')?.checked) stylePreferences.push("Creative");
+    if (document.querySelector('[name="style_bold"]')?.checked) stylePreferences.push("Bold");
+    const styleText = stylePreferences.length > 0 ? stylePreferences.join(", ") : "Not selected";
+    
+    const inspirationLinks = document.querySelector('[name="inspiration_links"]').value || "Not provided";
+
+    // ===== STEP 7: CONTENT AVAILABILITY =====
+    const contentAssets = [];
+    if (document.querySelector('[name="has_photos"]')?.checked) contentAssets.push("Professional Photos");
+    if (document.querySelector('[name="has_videos"]')?.checked) contentAssets.push("Videos");
+    if (document.querySelector('[name="has_text"]')?.checked) contentAssets.push("Text/Copy");
+    if (document.querySelector('[name="has_pricing"]')?.checked) contentAssets.push("Pricing List");
+    if (document.querySelector('[name="has_testimonials"]')?.checked) contentAssets.push("Testimonials");
+    const contentText = contentAssets.length > 0 ? contentAssets.join(", ") : "None available";
+    
+    const helpContent = document.querySelector('input[name="help_content"]:checked')?.value || "Not answered";
+
+    // ===== STEP 8: FEATURES & INTEGRATIONS =====
+    const features = [];
+    if (document.querySelector('[name="feature_forms"]')?.checked) features.push("Contact Forms");
+    if (document.querySelector('[name="feature_payments"]')?.checked) features.push("Online Payments");
+    if (document.querySelector('[name="feature_booking"]')?.checked) features.push("Booking/Scheduling");
+    if (document.querySelector('[name="feature_email"]')?.checked) features.push("Email Marketing");
+    if (document.querySelector('[name="feature_analytics"]')?.checked) features.push("Analytics");
+    if (document.querySelector('[name="feature_crm"]')?.checked) features.push("CRM");
+    const featuresText = features.length > 0 ? features.join(", ") : "None selected";
+
+    // ===== STEP 9: TIMELINE =====
+    const startDate = document.querySelector('[name="start_date"]').value || "Not provided";
+    const launchDate = document.querySelector('[name="launch_date"]').value || "Not provided";
+    const timeline = document.querySelector('input[name="timeline"]:checked')?.value || "Not selected";
+
+    // ===== STEP 10: BUDGET =====
+    const budget = document.querySelector('input[name="budget"]:checked')?.value || "Not selected";
+
+    // ===== STEP 11: FUTURE NEEDS =====
+    const futureNeeds = [];
+    if (document.querySelector('[name="future_updates"]')?.checked) futureNeeds.push("Monthly Updates");
+    if (document.querySelector('[name="future_hosting"]')?.checked) futureNeeds.push("Hosting & Maintenance");
+    if (document.querySelector('[name="future_seo"]')?.checked) futureNeeds.push("SEO");
+    if (document.querySelector('[name="future_ads"]')?.checked) futureNeeds.push("Ads Management");
+    const futureNeedsText = futureNeeds.length > 0 ? futureNeeds.join(", ") : "None selected";
+
+    // ===== BUILD THE COMPLETE MESSAGE =====
+    let message = `🚀 *NEW PROJECT INQUIRY*
+
+━━━━━━━━━━━━━━━━━━━━━
+📋 *STEP 1: BUSINESS INFO*
+━━━━━━━━━━━━━━━━━━━━━
+*Business Name:* ${businessName}
+*Owner Name:* ${ownerName}
+*Contact Name:* ${contactName}
+*Email:* ${email}
+*Phone:* ${phone}
+*Location:* ${location}
+*Has Website:* ${hasWebsite}
+*Website URL:* ${websiteUrl}
+*Social Media:* ${socialMediaText}
+
+━━━━━━━━━━━━━━━━━━━━━
+💼 *STEP 2: SERVICES/PRODUCTS*
+━━━━━━━━━━━━━━━━━━━━━
+*What they offer:* ${servicesText}
+
+━━━━━━━━━━━━━━━━━━━━━
+🎯 *STEP 3: PROJECT TYPE*
+━━━━━━━━━━━━━━━━━━━━━
+*Project Types:* ${projectTypesText}
+
+━━━━━━━━━━━━━━━━━━━━━
+🎯 *STEP 4: PRIMARY GOAL*
+━━━━━━━━━━━━━━━━━━━━━
+*Main Goal:* ${goal}
+*Success Metrics:* ${successMetrics}
+
+━━━━━━━━━━━━━━━━━━━━━
+👥 *STEP 5: TARGET AUDIENCE*
+━━━━━━━━━━━━━━━━━━━━━
+*Audience Description:* ${targetAudience}
+*Market Scope:* ${marketScope}
+*Business Type:* ${businessType}
+
+━━━━━━━━━━━━━━━━━━━━━
+🎨 *STEP 6: BRANDING & STYLE*
+━━━━━━━━━━━━━━━━━━━━━
+*Existing Branding:* ${brandingText}
+*Style Preferences:* ${styleText}
+*Inspiration Links:* ${inspirationLinks}
+
+━━━━━━━━━━━━━━━━━━━━━
+📸 *STEP 7: CONTENT*
+━━━━━━━━━━━━━━━━━━━━━
+*Available Assets:* ${contentText}
+*Need Content Help:* ${helpContent}
+
+━━━━━━━━━━━━━━━━━━━━━
+⚙️ *STEP 8: FEATURES*
+━━━━━━━━━━━━━━━━━━━━━
+*Required Features:* ${featuresText}
+
+━━━━━━━━━━━━━━━━━━━━━
+📅 *STEP 9: TIMELINE*
+━━━━━━━━━━━━━━━━━━━━━
+*Start Date:* ${startDate}
+*Desired Launch:* ${launchDate}
+*Flexibility:* ${timeline}
+
+━━━━━━━━━━━━━━━━━━━━━
+💰 *STEP 10: BUDGET*
+━━━━━━━━━━━━━━━━━━━━━
+*Budget Range:* ${budget}
+
+━━━━━━━━━━━━━━━━━━━━━
+🔮 *STEP 11: FUTURE NEEDS*
+━━━━━━━━━━━━━━━━━━━━━
+*Future Services:* ${futureNeedsText}
+
+━━━━━━━━━━━━━━━━━━━━━
+✅ *END OF INQUIRY*
+━━━━━━━━━━━━━━━━━━━━━`;
+
+    // ===== SEND TO WHATSAPP =====
+    const whatsappNumber = "212695031414";
+    const whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+    
+    window.open(whatsappURL, "_blank");
+});
+</script>
+
 </body>
 </html>
